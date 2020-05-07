@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj",
+  "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,37 +20521,37 @@
   "RootNamespace": "writeAJoke",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_Layout.cshtml",
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\Pages\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Privacy.cshtml",
       "TargetPath": "Pages\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\Pages\\Index.cshtml",
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Index.cshtml",
       "TargetPath": "Pages\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\Pages\\Error.cshtml",
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\Pages\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\Pages\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     }
