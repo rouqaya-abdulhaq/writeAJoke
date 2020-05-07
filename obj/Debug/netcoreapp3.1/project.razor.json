@@ -20521,8 +20521,28 @@
   "RootNamespace": "writeAJoke",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Jokes\\Edit.cshtml",
+      "TargetPath": "Pages\\Jokes\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Jokes\\Index.cshtml",
+      "TargetPath": "Pages\\Jokes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Jokes\\Delete.cshtml",
+      "TargetPath": "Pages\\Jokes\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Jokes\\Details.cshtml",
+      "TargetPath": "Pages\\Jokes\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -20543,6 +20563,11 @@
     {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Jokes\\Create.cshtml",
+      "TargetPath": "Pages\\Jokes\\Create.cshtml",
       "FileKind": "mvc"
     },
     {

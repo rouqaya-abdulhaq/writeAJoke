@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj": {}
+    "C:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj": {
+    "C:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj",
         "projectName": "writeAJoke",
-        "projectPath": "C:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj",
+        "projectPath": "C:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\writeAJoke.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\desktop\\c#Projects\\writeAJoke\\obj\\",
+        "outputPath": "C:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\acer\\AppData\\Roaming\\NuGet\\NuGet.Config"
