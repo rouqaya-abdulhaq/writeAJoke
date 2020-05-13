@@ -20,10 +20,18 @@ namespace writeAJoke.Pages.Jokes
         }
 
         public IList<Joke> Joke { get;set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchString {get; set;}
 
         public async Task OnGetAsync()
         {
-            Joke = await _context.Joke.ToListAsync();
+            var Jokes = from j in _context.Joke
+                        select j;
+            if(!string.IsNullOrEmpty(SearchString))
+            {
+                Jokes = Jokes.Where(s => s.Title.Contains(SearchString));
+            }
+            Joke = await Jokes.ToListAsync();
         }
     }
 }
