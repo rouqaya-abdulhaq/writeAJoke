@@ -24,6 +24,11 @@
                 <span asp-validation-for="Joke.Body" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Joke.Genre" class="control-label"></label>
+                <input asp-for="Joke.Genre" class="form-control" />
+                <span asp-validation-for="Joke.Genre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>

@@ -13,7 +13,8 @@ namespace writeAJoke.Migrations
                     ID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Title = table.Column<string>(nullable: true),
-                    Body = table.Column<string>(nullable: true)
+                    Body = table.Column<string>(nullable: true),
+                    Genre = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
