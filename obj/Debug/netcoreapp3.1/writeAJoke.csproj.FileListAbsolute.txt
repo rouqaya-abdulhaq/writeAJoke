@@ -165,3 +165,4 @@ C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Details.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Edit.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Index.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Favicons.cshtml.g.cs
