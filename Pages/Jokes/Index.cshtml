@@ -17,39 +17,21 @@
         <input type="submit" value="Filter"/>
     </p>
 </form>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Joke[0].Title)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Joke[0].Body)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Joke[0].Genre)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
+<div>
 @foreach (var item in Model.Joke) {
-        <tr>
-            <td>
+        <div class="card">
+            <div class="card-title">
                 @Html.DisplayFor(modelItem => item.Title)
-            </td>
-            <td>
+            </div>
+            <div class="crad-body">
                 @Html.DisplayFor(modelItem => item.Body)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
+            <div class="card-link">
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
-            </td>
-        </tr>
+            </div>
+            </div>
+        </div>
 }
-    </tbody>
-</table>
+</div>
+
