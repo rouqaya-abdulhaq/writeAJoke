@@ -6,10 +6,10 @@
 }
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create" class="badge badge-pill badge-primary">Create New</a>
 </p>
 <form>
-    <select asp-for="JokeGenre" asp-items="Model.Genres">
+    <select asp-for="JokeGenre" asp-items="Model.Genres" class="mb-1">
         <option value="">All</option>
     </select>
     <p>
@@ -17,9 +17,9 @@
         <input type="submit" value="Filter"/>
     </p>
 </form>
-<div>
+<div class="d-flex flex-column align-items-center">
 @foreach (var item in Model.Joke) {
-        <div class="card">
+        <div class="card mt-2 p-2 d-flex flex-column align-items-center" style="width: fit-content;">
             <div class="card-title">
                 @Html.DisplayFor(modelItem => item.Title)
             </div>
