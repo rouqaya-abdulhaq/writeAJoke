@@ -21,7 +21,6 @@ C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\writeAJoke.T
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\writeAJoke.RazorCoreGenerate.cache
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
