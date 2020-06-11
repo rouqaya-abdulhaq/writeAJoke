@@ -6,26 +6,30 @@
 }
 
 <p>
-    <a asp-page="Create" class="badge badge-pill badge-primary">Create New</a>
+    <a asp-page="Create" class="badge badge-pill text-dark" 
+    style="background-color: #f3c623; height: 3vh; width : fit-content;">
+        Create New
+    </a>
 </p>
-<form>
-    <select asp-for="JokeGenre" asp-items="Model.Genres" class="mb-1">
+<form class="d-flex mt-4">
+    <select asp-for="JokeGenre" asp-items="Model.Genres" class="mb-1 rounded" style="background-color: #f4f6ff; height : fit-content">
         <option value="">All</option>
     </select>
-    <p>
-        Title : <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter"/>
+    <p class="ml-4">
+        Title : <input type="text" asp-for="SearchString" class="rounded" />
+        <input type="submit" value="Filter" style="background-color: #f4f6ff;"/>
     </p>
 </form>
 <div class="d-flex flex-column align-items-center">
 @foreach (var item in Model.Joke) {
-        <div class="card mt-2 p-2 d-flex flex-column align-items-center" style="width: fit-content;">
-            <div class="card-title">
+        <div class="card mt-2 p-3 d-flex flex-column align-items-center rounded-pill text-dark" 
+        style="width: fit-content; border: 3px solid #f3c623">
+            <h5 class="card-title">
                 @Html.DisplayFor(modelItem => item.Title)
-            </div>
+            </h5>
             <div class="crad-body">
                 @Html.DisplayFor(modelItem => item.Body)
-            <div class="card-link">
+            <div class="card-link ml-5">
                 <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
