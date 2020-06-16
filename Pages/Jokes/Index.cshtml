@@ -29,10 +29,13 @@
             </h5>
             <div class="crad-body">
                 @Html.DisplayFor(modelItem => item.Body)
-            <div class="card-link ml-5">
-                <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+            <div class="card-link mt-2" style="margin-left: 40%;">
+                <a asp-page="./Edit" asp-route-id="@item.ID">
+                    <img src="~/images/edit.png" alt="edit" asp-append-version="true"/>
+                </a> 
+                <a asp-page="./Delete" asp-route-id="@item.ID">
+                    <img src="~/images/delete.png" alt="edit" asp-append-version="true"/>
+                </a>
             </div>
             </div>
         </div>
