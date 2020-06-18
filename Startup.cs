@@ -28,6 +28,11 @@ namespace writeAJoke
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddMvc().AddRazorPagesOptions(options =>
+            {
+                options.Conventions.AddPageRoute("/Jokes/Index","");
+            }
+            );
             if(Environment.IsDevelopment())
             {
                 services.AddDbContext<writeAJokeContext>(options =>
