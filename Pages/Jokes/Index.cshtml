@@ -33,9 +33,14 @@
                 <a asp-page="./Edit" asp-route-id="@item.ID">
                     <img src="~/images/edit.png" alt="edit" asp-append-version="true"/>
                 </a> 
-                <a asp-page="./Delete" asp-route-id="@item.ID">
-                    <img src="~/images/delete.png" alt="edit" asp-append-version="true"/>
-                </a>
+                
+                <form method="post" asp-route-id="@item.ID" asp-page-handler="delete" class="d-inline">
+                    <input type="hidden"/>
+                    <button type="submit" onclick="return confirm('Are you sure you want to delete?')"
+                    style="border: none; background : transparent;">
+                        <img src="~/images/delete.png" alt="delete" asp-append-version="true"/>
+                    </button>
+                </form>
             </div>
             </div>
         </div>

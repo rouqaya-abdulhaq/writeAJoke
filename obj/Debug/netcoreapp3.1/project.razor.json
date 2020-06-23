@@ -20536,11 +20536,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Jokes\\Delete.cshtml",
-      "TargetPath": "Pages\\Jokes\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
