@@ -20,7 +20,6 @@ C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\writeAJoke.T
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\writeAJoke.TagHelpers.output.cache
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\writeAJoke.RazorCoreGenerate.cache
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
-C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\acer\desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
@@ -160,7 +159,6 @@ C:\Users\acer\desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\runtimes\uni
 C:\Users\acer\desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\acer\desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Create.cshtml.g.cs
-C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Delete.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Edit.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Index.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Favicons.cshtml.g.cs
