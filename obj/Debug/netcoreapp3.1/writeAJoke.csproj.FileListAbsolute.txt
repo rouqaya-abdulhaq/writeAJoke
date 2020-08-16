@@ -162,3 +162,17 @@ C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Edit.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Jokes\Index.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Favicons.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\writeAJoke.StaticWebAssets.xml
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\writeAJoke.MvcApplicationPartsAssemblyInfo.cs
