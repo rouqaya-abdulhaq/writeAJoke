@@ -46,7 +46,14 @@ namespace writeAJoke
             }
 
             services.AddIdentity<IdentityUser, IdentityRole>()
-                    .AddEntityFrameworkStores<writeAJokeContext>();
+                    .AddEntityFrameworkStores<writeAJokeContext>()
+                    .AddDefaultTokenProviders();
+
+            services.ConfigureApplicationCookie( options => {
+                options.LoginPath = "/Login";
+                options.LogoutPath = "/Logout";
+                options.AccessDeniedPath = "/AccessDenied";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
