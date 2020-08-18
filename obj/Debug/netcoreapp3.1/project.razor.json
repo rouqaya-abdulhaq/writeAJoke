@@ -14206,6 +14206,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\User\\Register.cshtml",
+      "TargetPath": "Pages\\User\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_Favicons.cshtml",
       "TargetPath": "Pages\\Shared\\_Favicons.cshtml",
       "FileKind": "mvc"
