@@ -14201,6 +14201,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\User\\Login.cshtml",
+      "TargetPath": "Pages\\User\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Pages\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
