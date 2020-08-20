@@ -1,0 +1,38 @@
+@page
+@model writeAJoke.Pages.User.LoginModel
+
+<div class="d-flex flex-column align-items-center">
+    <h1>Log In</h1>
+    <form method="POST">
+        <div asp-validation-summary="All"></div>
+        <div>
+            <label asp-for="Input.Email"></label>
+            <input asp-for="Input.Email"/>
+            <span asp-validation-for="Input.Email"></span>
+        </div>
+        <div>
+            <label asp-for="Input.Password"></label>
+            <input asp-for="Input.Password"/>
+            <span asp-validation-for="Input.Password"></span>
+        </div>
+        <div>
+            <div>
+                <label asp-for="Input.RememberMe">
+                    <input asp-for="Input.RememberMe"/>
+                    @Html.DisplayNameFor(m => m.Input.RememberMe)
+                </label>
+            </div>
+        </div>
+        <div>
+            <button type="submit">Log In</button>
+        </div>
+        <div>
+            <p>
+                <a id="forgot-password" asp-page="./ForgotPassword">Forgot Password?</a>
+            </p>
+            <p>
+                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">New User?</a>
+            </p>
+        </div>
+    </form>
+</div>
