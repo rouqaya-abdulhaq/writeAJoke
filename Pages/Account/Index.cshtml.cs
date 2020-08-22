@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -55,5 +56,37 @@ namespace writeAJoke.Pages.Account
 
             return Page();
         } 
+
+        public async Task<IActionResult> OnPostAsync ()
+        {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+
+            var user = await _userManager.GetUserAsync(User);
+            if(user == null)
+            {
+                return NotFound($"Unable to load user with ID '{_userManager.GetUserId(User)}'.");
+            }
+
+            var email = await _userManager.GetEmailAsync(user);
+            var name = await _userManager.GetUserNameAsync(user);
+            if(Input.Email != email || Input.Name != name)
+            {
+                var setUserNameResult = await _userManager.SetUserNameAsync(user,Input.Name);
+                var setEmailResult = await _userManager.SetEmailAsync(user , Input.Email);
+
+                if(!setUserNameResult.Succeeded || !setEmailResult.Succeeded)
+                {
+                    var userId = await _userManager.GetUserIdAsync(user);
+                    throw new InvalidOperationException($"unexpected Error occured while setting email for ID '{userId}'.");
+                }
+            }
+
+            await _signInManager.RefreshSignInAsync(user);
+            StatusMessage = "Your profile has been updated";
+            return RedirectToPage(); 
+        }
     }
 }
