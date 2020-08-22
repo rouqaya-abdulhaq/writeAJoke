@@ -1,0 +1,40 @@
+@page
+@model writeAJoke.Pages.Account.IndexModel
+
+<div class="d-flex flex-column align-items-center">
+    <form asp-page="../User/Logout" method="POST">
+        <button type="submit">Log out</button>
+    </form>
+    <div>@Model.StatusMessage</div>
+    <div>
+        <form id="profile-form" method="POST">
+            <div asp-validation-summary="All"></div>
+            <div>
+                <label asp-for="Input.Name"></label>
+                @if(Model.IsEmailConfirmed)
+                {
+                    <input asp-for="Input.Name"/>
+                }
+                else
+                {
+                    <p>Can't access before you confirm your email</p>
+                }
+                <span asp-validation-for="Input.Name"></span>
+            </div>
+            <div>
+                <label asp-for="Input.Email"></label>
+                @if(Model.IsEmailConfirmed)
+                {
+                    <input asp-for="Input.Email"/>
+                }
+                else
+                {
+                    <input asp-for="Input.Email"/>
+                    <button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail">Send verifiaction email</button>
+                }
+                <span asp-validation-for="Input.Email"></span>
+            </div>
+            <button id="update-profile-button" type="submit">Save</button>
+        </form>
+    </div>
+</div>
