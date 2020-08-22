@@ -48,7 +48,8 @@ namespace writeAJoke
 
             services.AddIdentity<IdentityUser, IdentityRole>()
                     .AddEntityFrameworkStores<writeAJokeContext>()
-                    .AddDefaultTokenProviders();
+                    .AddDefaultTokenProviders()
+                    .AddDefaultUI();
 
             services.ConfigureApplicationCookie( options => {
                 options.LoginPath = "/Login";
