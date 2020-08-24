@@ -32,7 +32,6 @@ namespace writeAJoke
             services.AddMvc().AddRazorPagesOptions(options =>
             {
                 options.Conventions.AddPageRoute("/Jokes/Index","");
-                options.Conventions.AuthorizeFolder("/Account");
             }
             );
             if(Environment.IsDevelopment())
