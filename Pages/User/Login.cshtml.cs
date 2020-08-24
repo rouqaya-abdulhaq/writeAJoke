@@ -40,7 +40,7 @@ namespace writeAJoke.Pages.User
 
             if(ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: true);
+                var result = await _signInManager.PasswordSignInAsync(Input.Name, Input.Password, Input.RememberMe, lockoutOnFailure: true);
                 if(result.Succeeded)
                 {
                     _Logger.LogInformation("User logged in.");
