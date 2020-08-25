@@ -3,40 +3,38 @@
 
 <div class="d-flex flex-column align-items-center">
     <h1>Log In</h1>
+    <hr style="background-color: #f3c623;" />
     <form method="POST">
-        <div asp-validation-summary="All"></div>
+        <div asp-validation-summary="All" class="text-danger"></div>
         <div>
-            <label asp-for="Input.Name"></label>
-            <input asp-for="Input.Name"/>
-            <span asp-validation-for="Input.Name"></span>
+            <label asp-for="Input.Name" class="control-label"></label>
+            <input asp-for="Input.Name" class="form-control" style="border: 2px solid #f3c623"/>
+            <span asp-validation-for="Input.Name" class="text-danger"></span>
         </div>
         <div>
-            <label asp-for="Input.Email"></label>
-            <input asp-for="Input.Email"/>
-            <span asp-validation-for="Input.Email"></span>
+            <label asp-for="Input.Email" class="control-label"></label>
+            <input asp-for="Input.Email" class="form-control" style="border: 2px solid #f3c623"/>
+            <span asp-validation-for="Input.Email" class="text-danger"></span>
         </div>
         <div>
-            <label asp-for="Input.Password"></label>
-            <input asp-for="Input.Password"/>
-            <span asp-validation-for="Input.Password"></span>
+            <label asp-for="Input.Password" class="control-label"></label>
+            <input asp-for="Input.Password" class="form-control" style="border: 2px solid #f3c623"/>
+            <span asp-validation-for="Input.Password" class="text-danger"></span>
         </div>
         <div>
             <div>
-                <label asp-for="Input.RememberMe">
-                    <input asp-for="Input.RememberMe"/>
+                <label asp-for="Input.RememberMe" >
+                    <input asp-for="Input.RememberMe" style="border: 2px solid #f3c623"/>
                     @Html.DisplayNameFor(m => m.Input.RememberMe)
                 </label>
             </div>
         </div>
         <div>
-            <button type="submit">Log In</button>
+            <button type="submit" class="btn btn-primary mt-2">Log In</button>
         </div>
         <div>
-            <p>
-                <a id="forgot-password" asp-page="./ForgotPassword">Forgot Password?</a>
-            </p>
-            <p>
-                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">New User?</a>
+            <p class="nav-item">
+                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="nav-link" style="color: gray;">New User?</a>
             </p>
         </div>
     </form>
