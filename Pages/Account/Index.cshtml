@@ -3,23 +3,24 @@
 
 <div class="d-flex flex-column align-items-center">
     <form asp-page="../User/Logout" method="POST">
-        <button type="submit">Log out</button>
+        <button type="submit" class="btn btn-primary mt-2">Log out</button>
     </form>
+    <hr style="background-color: #f3c623;" />
     <div>@Model.StatusMessage</div>
     <div>
         <form id="profile-form" method="POST">
-            <div asp-validation-summary="All"></div>
+            <div asp-validation-summary="All" class="text-danger"></div>
             <div>
-                <label asp-for="Input.Name"></label>
-                    <input asp-for="Input.Name"/>
-                <span asp-validation-for="Input.Name"></span>
+                <label asp-for="Input.Name" class="control-label"></label>
+                <input asp-for="Input.Name" class="form-control" style="border: 2px solid #f3c623"/>
+                <span asp-validation-for="Input.Name" class="text-danger"></span>
             </div>
             <div>
-                <label asp-for="Input.Email"></label>
-                    <input asp-for="Input.Email"/>
-                <span asp-validation-for="Input.Email"></span>
+                <label asp-for="Input.Email" class="control-label"></label>
+                <input asp-for="Input.Email" class="form-control" style="border: 2px solid #f3c623"/>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
-            <button id="update-profile-button" type="submit">Save</button>
+            <button id="update-profile-button" type="submit" class="btn btn-primary mt-2">Save</button>
         </form>
     </div>
 </div>
