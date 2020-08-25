@@ -24,12 +24,22 @@
                     <ul class="navbar-nav flex-grow-1">
                         @if(SignInManager.IsSignedIn(User))
                         {
-                            <li><a asp-page="../Account/Index">Account</a></li>
+                            <li class="nav-item" style="margin-left: auto;">
+                                <a class="nav-link" asp-page="../Account/Index">
+                                    <img src="~/images/joker.png" alt="joker" asp-append-version="true"/>
+                                </a>
+                            </li>
                         }
                         else
                         {
-                           <li><a asp-page="../User/Register">Register</a></li>
-                            <li><a asp-page="../User/Login">Log In</a></li> 
+                            <div class="d-flex" style="margin-left: auto;">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-page="../User/Register">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-page="../User/Login">Log In</a>
+                                </li> 
+                            </div>
                         }
                     </ul>
                 </div>
