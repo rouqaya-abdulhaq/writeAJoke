@@ -25,14 +25,9 @@ namespace writeAJoke.Pages.User
         {
             await _signInManager.SignOutAsync();
             _logger.LogInformation("User logged out");
-            if(returnUrl != null)
-            {
-                return Redirect(returnUrl);
-            }
-            else
-            {
-                return Page();
-            }
+            
+                return RedirectToPage("../Jokes/Index");
+            
         }
     }
 }
