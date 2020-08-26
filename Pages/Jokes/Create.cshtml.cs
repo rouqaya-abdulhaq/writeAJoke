@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using writeAJoke.Data;
 using writeAJoke.Models;
+using System.Security.Claims;
 
 namespace writeAJoke.Pages.Jokes
 {
@@ -35,6 +35,9 @@ namespace writeAJoke.Pages.Jokes
             {
                 return Page();
             }
+
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            Joke.UserId = userId;
 
             _context.Joke.Add(Joke);
             await _context.SaveChangesAsync();

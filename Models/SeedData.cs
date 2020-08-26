@@ -24,7 +24,8 @@ namespace writeAJoke.Models
                     {
                         Title = "vegan joke premttion",
                         Body = "can i tell you a vegan joke? i promise it won't be cheesy",
-                        Genre = "dad jokes"
+                        Genre = "dad jokes",
+                        UserId = ""
                     }
                 );
 
