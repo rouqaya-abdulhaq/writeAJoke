@@ -99,5 +99,18 @@ namespace writeAJoke.Pages.Account
             StatusMessage = "Your profile has been updated";
             return RedirectToPage(); 
         }
+
+        public async Task<IActionResult> OnPostDeleteAsync(int? id)
+        {
+            var JokeToDelete = await _context.Joke.FindAsync(id);
+
+            if(JokeToDelete != null)
+            {
+                _context.Joke.Remove(JokeToDelete);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToPage();
+        }
     }
 }
