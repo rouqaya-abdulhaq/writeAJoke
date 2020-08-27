@@ -1,8 +1,11 @@
 using System;
+using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using System.Text.Encodings.Web;
@@ -14,12 +17,14 @@ namespace writeAJoke.Pages.Account
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly writeAJoke.Data.writeAJokeContext _context;
 
-        public IndexModel(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager
-            )
+        public IndexModel(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager,
+            writeAJoke.Data.writeAJokeContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            _context = context;
         }
 
         public string UserName {get; set;}
@@ -31,6 +36,8 @@ namespace writeAJoke.Pages.Account
         [BindProperty]
         public InputModel Input {get; set;}
 
+        public IList<Joke> JokeList { get;set; }
+
         public async Task<IActionResult> OnGetAsync()
         {
             var user = await _userManager.GetUserAsync(User);
@@ -41,8 +48,16 @@ namespace writeAJoke.Pages.Account
 
             var userName = await _userManager.GetUserNameAsync(user);
             var userEmail = await _userManager.GetEmailAsync(user);
+            var userId = await _userManager.GetUserIdAsync(user);
 
             UserName = userName;
+
+            var Jokes = from j in _context.Joke
+                        select j;
+
+            Jokes = Jokes.Where(g => g.UserId == userId);
+
+            JokeList = await Jokes.ToListAsync();
 
             Input = new InputModel
             {
