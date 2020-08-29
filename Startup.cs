@@ -28,6 +28,8 @@ namespace writeAJoke
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpContextAccessor();
+            
             services.AddRazorPages();
             services.AddMvc().AddRazorPagesOptions(options =>
             {
@@ -55,6 +57,7 @@ namespace writeAJoke
                 options.LogoutPath = "/Logout";
                 options.AccessDeniedPath = "/AccessDenied";
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

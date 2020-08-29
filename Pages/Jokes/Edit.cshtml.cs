@@ -48,6 +48,8 @@ namespace writeAJoke.Pages.Jokes
                 return Page();
             }
 
+            
+
             _context.Attach(Joke).State = EntityState.Modified;
 
             try

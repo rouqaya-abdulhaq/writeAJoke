@@ -36,7 +36,7 @@ namespace writeAJoke.Pages.Jokes
                 return Page();
             }
 
-            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userId = this.User.FindFirstValue(ClaimTypes.Name);
             Joke.UserId = userId;
 
             _context.Joke.Add(Joke);

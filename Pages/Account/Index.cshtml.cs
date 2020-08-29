@@ -48,14 +48,13 @@ namespace writeAJoke.Pages.Account
 
             var userName = await _userManager.GetUserNameAsync(user);
             var userEmail = await _userManager.GetEmailAsync(user);
-            var userId = await _userManager.GetUserIdAsync(user);
 
             UserName = userName;
 
             var Jokes = from j in _context.Joke
                         select j;
 
-            Jokes = Jokes.Where(g => g.UserId == userId);
+            Jokes = Jokes.Where(g => g.UserId == userName);
 
             JokeList = await Jokes.ToListAsync();
 
