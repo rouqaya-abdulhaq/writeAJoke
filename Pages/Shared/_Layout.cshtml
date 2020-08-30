@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Identity
+
+@inject SignInManager<IdentityUser> SignInManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -18,7 +22,25 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        
+                        @if(SignInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item" style="margin-left: auto;">
+                                <a class="nav-link" asp-page="../Account/Index">
+                                    <img src="~/images/joker.png" alt="joker" asp-append-version="true"/>
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <div class="d-flex" style="margin-left: auto;">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-page="../User/Register">Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-page="../User/Login">Log In</a>
+                                </li> 
+                            </div>
+                        }
                     </ul>
                 </div>
             </div>
@@ -42,14 +64,4 @@
 
     @RenderSection("Scripts", required: false)
 </body>
-</html>
-<!DOCTYPE html>
-<html>
-  <head>
-    <!-- Other head elements -->
-    @Html.Partial("_Favicons")
-  </head>
-  <body>
-    
-  </body>
 </html>

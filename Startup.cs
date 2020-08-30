@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using writeAJoke.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace writeAJoke
 {
@@ -27,6 +28,8 @@ namespace writeAJoke
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddHttpContextAccessor();
+            
             services.AddRazorPages();
             services.AddMvc().AddRazorPagesOptions(options =>
             {
@@ -43,6 +46,18 @@ namespace writeAJoke
                 services.AddDbContext<writeAJokeContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("JokeContext")));
             }
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                    .AddEntityFrameworkStores<writeAJokeContext>()
+                    .AddDefaultTokenProviders()
+                    .AddDefaultUI();
+
+            services.ConfigureApplicationCookie( options => {
+                options.LoginPath = "/Login";
+                options.LogoutPath = "/Logout";
+                options.AccessDeniedPath = "/AccessDenied";
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -63,6 +78,8 @@ namespace writeAJoke
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

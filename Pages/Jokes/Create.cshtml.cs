@@ -4,9 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using writeAJoke.Data;
 using writeAJoke.Models;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
+
 
 namespace writeAJoke.Pages.Jokes
 {
@@ -14,13 +16,20 @@ namespace writeAJoke.Pages.Jokes
     {
         private readonly writeAJoke.Data.writeAJokeContext _context;
 
-        public CreateModel(writeAJoke.Data.writeAJokeContext context)
+        private readonly SignInManager<IdentityUser> _signInManager;
+
+        public CreateModel(writeAJoke.Data.writeAJokeContext context,SignInManager<IdentityUser> signInManager)
         {
             _context = context;
+            _signInManager = signInManager;
         }
 
         public IActionResult OnGet()
         {
+            if(!_signInManager.IsSignedIn(User))
+            {
+                return RedirectToPage("../User/Login");
+            }
             return Page();
         }
 
@@ -35,6 +44,9 @@ namespace writeAJoke.Pages.Jokes
             {
                 return Page();
             }
+
+            var userId = this.User.FindFirstValue(ClaimTypes.Name);
+            Joke.UserId = userId;
 
             _context.Joke.Add(Joke);
             await _context.SaveChangesAsync();

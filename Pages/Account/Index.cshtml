@@ -1,0 +1,52 @@
+@page
+@model writeAJoke.Pages.Account.IndexModel
+
+<div class="d-flex flex-column align-items-center">
+    <form asp-page="../User/Logout" method="POST">
+        <button type="submit" class="btn btn-primary mt-2">Log out</button>
+    </form>
+    <hr style="background-color: #f3c623;" />
+    <div>@Model.StatusMessage</div>
+    <div>
+        <form id="profile-form" method="POST">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div>
+                <label asp-for="Input.Name" class="control-label"></label>
+                <input asp-for="Input.Name" class="form-control" style="border: 2px solid #f3c623"/>
+                <span asp-validation-for="Input.Name" class="text-danger"></span>
+            </div>
+            <div>
+                <label asp-for="Input.Email" class="control-label"></label>
+                <input asp-for="Input.Email" class="form-control" style="border: 2px solid #f3c623"/>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <button id="update-profile-button" type="submit" class="btn btn-primary mt-2">Save</button>
+        </form>
+        <hr/>
+        <h4>Your Jokes :</h4>
+        @foreach (var item in Model.JokeList) {
+        <div class="card mt-2 p-3 d-flex flex-column align-items-center rounded-pill text-dark" 
+        style="width: fit-content; border: 3px solid #f3c623">
+            <h5 class="card-title">
+                @Html.DisplayFor(modelItem => item.Title)
+            </h5>
+            <div class="crad-body">
+                @Html.DisplayFor(modelItem => item.Body)
+            <div class="card-link mt-2" style="margin-left: 40%;">
+                <a asp-page="../Jokes/Edit" asp-route-id="@item.ID">
+                    <img src="~/images/edit.png" alt="edit" asp-append-version="true"/>
+                </a> 
+                
+                <form method="post" asp-route-id="@item.ID" asp-page-handler="delete" class="d-inline">
+                    <input type="hidden"/>
+                    <button type="submit" onclick="return confirm('Are you sure you want to delete?')"
+                    style="border: none; background : transparent;">
+                        <img src="~/images/delete.png" alt="delete" asp-append-version="true"/>
+                    </button>
+                </form>
+            </div>
+            </div>
+        </div>
+}
+    </div>
+</div>

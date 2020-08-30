@@ -1,8 +1,9 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace writeAJoke.Data 
 {
-    public class writeAJokeContext : DbContext
+    public class writeAJokeContext : IdentityDbContext
     {
         public writeAJokeContext (
             DbContextOptions<writeAJokeContext> options) 

@@ -48,6 +48,8 @@ namespace writeAJoke.Pages.Jokes
                 return Page();
             }
 
+            
+
             _context.Attach(Joke).State = EntityState.Modified;
 
             try
@@ -66,7 +68,7 @@ namespace writeAJoke.Pages.Jokes
                 }
             }
 
-            return RedirectToPage("./Index");
+            return RedirectToPage("../Account/Index");
         }
 
         private bool JokeExists(int id)

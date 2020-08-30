@@ -22,28 +22,16 @@
 </form>
 <div class="d-flex flex-column align-items-center">
 @foreach (var item in Model.Joke) {
-        <div class="card mt-2 p-3 d-flex flex-column align-items-center rounded-pill text-dark" 
+        <div class="card mt-2 p-4 d-flex flex-column align-items-center rounded-pill text-dark" 
         style="width: fit-content; border: 3px solid #f3c623">
             <h5 class="card-title">
                 @Html.DisplayFor(modelItem => item.Title)
             </h5>
             <div class="crad-body">
                 @Html.DisplayFor(modelItem => item.Body)
-            <div class="card-link mt-2" style="margin-left: 40%;">
-                <a asp-page="./Edit" asp-route-id="@item.ID">
-                    <img src="~/images/edit.png" alt="edit" asp-append-version="true"/>
-                </a> 
-                
-                <form method="post" asp-route-id="@item.ID" asp-page-handler="delete" class="d-inline">
-                    <input type="hidden"/>
-                    <button type="submit" onclick="return confirm('Are you sure you want to delete?')"
-                    style="border: none; background : transparent;">
-                        <img src="~/images/delete.png" alt="delete" asp-append-version="true"/>
-                    </button>
-                </form>
             </div>
-            </div>
-        </div>
+            <p style="color: grey;"><i>by : @Html.DisplayFor(modelItem => item.UserId)</i></p>
+    </div>
 }
 </div>
 
