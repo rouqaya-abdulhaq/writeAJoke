@@ -4,8 +4,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using System.Text.Encodings.Web;
 using writeAJoke.Models;
 
 
