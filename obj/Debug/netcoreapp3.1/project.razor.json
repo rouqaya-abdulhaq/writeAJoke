@@ -14402,6 +14402,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\404.cshtml",
+      "TargetPath": "Pages\\Errors\\404.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Shared\\_Layout.cshtml",
       "TargetPath": "Pages\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"

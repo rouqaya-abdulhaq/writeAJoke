@@ -74,6 +74,8 @@ namespace writeAJoke
                 app.UseHsts();
             }
 
+            app.UseStatusCodePagesWithRedirects("/Errors/{0}");
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
