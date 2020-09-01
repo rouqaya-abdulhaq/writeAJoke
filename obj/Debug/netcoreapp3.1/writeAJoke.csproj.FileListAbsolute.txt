@@ -183,3 +183,4 @@ C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\404.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\500.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\502.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\503.cshtml.g.cs
