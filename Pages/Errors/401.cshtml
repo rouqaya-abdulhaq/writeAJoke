@@ -1,0 +1,11 @@
+@page
+@{
+    ViewData["Title"] = "Unauthorized";
+}
+<div class="d-flex flex-column align-items-center">
+    <h1 class="text-warning text-center mt-3">401 error</h1>
+    <p class="text-center">you are not premitted to make this request. only authenticated, valid role users can make it.</p>
+    <a class="nav-link m-5" asp-page="../Jokes/Index">
+        <button>back to home</button>
+    </a>
+</div>

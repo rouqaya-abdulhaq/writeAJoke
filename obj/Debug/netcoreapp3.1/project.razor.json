@@ -14397,8 +14397,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\403.cshtml",
+      "TargetPath": "Pages\\Errors\\403.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\502.cshtml",
+      "TargetPath": "Pages\\Errors\\502.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Jokes\\Index.cshtml",
       "TargetPath": "Pages\\Jokes\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\404.cshtml",
+      "TargetPath": "Pages\\Errors\\404.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14414,6 +14429,11 @@
     {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\User\\Login.cshtml",
       "TargetPath": "Pages\\User\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\504.cshtml",
+      "TargetPath": "Pages\\Errors\\504.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14434,6 +14454,21 @@
     {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\401.cshtml",
+      "TargetPath": "Pages\\Errors\\401.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\503.cshtml",
+      "TargetPath": "Pages\\Errors\\503.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\500.cshtml",
+      "TargetPath": "Pages\\Errors\\500.cshtml",
       "FileKind": "mvc"
     },
     {

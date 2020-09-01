@@ -180,3 +180,10 @@ C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\User\Login.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\User\Logout.cshtml.g.cs
 C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\User\Register.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\404.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\500.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\502.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\503.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\504.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\401.cshtml.g.cs
+C:\Users\acer\Desktop\c#Projects\writeAJoke\obj\Debug\netcoreapp3.1\Razor\Pages\Errors\403.cshtml.g.cs
