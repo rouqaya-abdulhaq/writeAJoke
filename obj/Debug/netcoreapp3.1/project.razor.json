@@ -14442,6 +14442,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Errors\\500.cshtml",
+      "TargetPath": "Pages\\Errors\\500.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Jokes\\Create.cshtml",
       "TargetPath": "Pages\\Jokes\\Create.cshtml",
       "FileKind": "mvc"
