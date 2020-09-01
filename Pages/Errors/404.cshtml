@@ -2,5 +2,10 @@
 @{
     ViewData["Title"] = "No Such Page";
 }
-<h1 class="text-warning text-center mt-3">404 error</h1>
-<p class="text-center">page not found</p>
+<div class="d-flex flex-column align-items-center">
+    <h1 class="text-warning text-center mt-3">404 error</h1>
+    <p class="text-center">page not found</p>
+    <a class="nav-link m-5" asp-page="../Jokes/Index">
+        <button>back to home</button>
+    </a>
+</div>
