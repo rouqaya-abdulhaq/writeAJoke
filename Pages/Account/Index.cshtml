@@ -1,6 +1,10 @@
 @page
 @model writeAJoke.Pages.Account.IndexModel
 
+@{
+    ViewData["Title"] = "Account";
+}
+
 <div class="d-flex flex-column align-items-center">
     <form asp-page="../User/Logout" method="POST">
         <button type="submit" class="btn btn-primary mt-2">Log out</button>

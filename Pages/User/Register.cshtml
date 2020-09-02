@@ -1,6 +1,10 @@
 @page
 @model writeAJoke.Pages.User.RegisterModel
 
+@{
+    ViewData["Title"] = "Register";
+}
+
 <div class="d-flex flex-column align-items-center">
     <h1>Register</h1>
     <hr style="background-color: #f3c623;" />
@@ -21,6 +25,6 @@
             <input asp-for="Input.Password" class="form-control" style="border: 2px solid #f3c623"/>
             <span asp-validation-for="Input.Password" class="text-danger"></span>
         </div>
-        <button type="submit" class="btn btn-primary mt-2">Register</button>
+        <button type="submit" class="btn btn-primary mt-2">Register New User</button>
     </form>
 </div>
