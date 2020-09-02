@@ -5,9 +5,6 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using System.Text.Encodings.Web;
 using writeAJoke.Models;
 
 namespace writeAJoke.Pages.Account
@@ -37,6 +34,7 @@ namespace writeAJoke.Pages.Account
 
         public IList<Joke> JokeList { get;set; }
 
+
         public async Task<IActionResult> OnGetAsync()
         {
             var user = await _userManager.GetUserAsync(User);
@@ -50,12 +48,7 @@ namespace writeAJoke.Pages.Account
 
             UserName = userName;
 
-            var Jokes = from j in _context.Joke
-                        select j;
-
-            Jokes = Jokes.Where(g => g.UserId == userName);
-
-            JokeList = await Jokes.ToListAsync();
+            JokeList = getJokesFromDB(userName);
 
             Input = new InputModel
             {
@@ -83,14 +76,7 @@ namespace writeAJoke.Pages.Account
             var name = await _userManager.GetUserNameAsync(user);
             if(Input.Email != email || Input.Name != name)
             {
-                var setUserNameResult = await _userManager.SetUserNameAsync(user,Input.Name);
-                var setEmailResult = await _userManager.SetEmailAsync(user , Input.Email);
-
-                if(!setUserNameResult.Succeeded || !setEmailResult.Succeeded)
-                {
-                    var userId = await _userManager.GetUserIdAsync(user);
-                    throw new InvalidOperationException($"unexpected Error occured while setting email for ID '{userId}'.");
-                }
+                UpdateUserData(user);
             }
 
             await _signInManager.RefreshSignInAsync(user);
@@ -109,6 +95,34 @@ namespace writeAJoke.Pages.Account
             }
 
             return RedirectToPage();
+        }
+
+        private List<Joke> getJokesFromDB(string userName)
+        {
+            var Jokes = from j in _context.Joke
+                        select j;
+
+            Jokes = Jokes.Where(g => g.UserId == userName);
+            
+            var JokesList = Jokes.ToList();
+            return JokesList;
+        }
+
+        private async void UpdateUserData(IdentityUser user)
+        {
+            var setUserNameResult = await _userManager.SetUserNameAsync(user,Input.Name);
+            var setEmailResult = await _userManager.SetEmailAsync(user , Input.Email);
+
+            if(!setUserNameResult.Succeeded || !setEmailResult.Succeeded)
+            {
+                UpdateFailHandler(user);
+            }
+        }
+
+        private async void UpdateFailHandler(IdentityUser user)
+        {
+            var userId = await _userManager.GetUserIdAsync(user);
+            throw new InvalidOperationException($"unexpected Error occured while setting email for ID '{userId}'.");
         }
     }
 }
