@@ -41,8 +41,10 @@ namespace writeAJoke.Pages.Jokes
                 return Page();
             }
 
-            var userId = this.User.FindFirstValue(ClaimTypes.Name);
+            var userId = this.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userName = this.User.FindFirstValue(ClaimTypes.Name);
             Joke.UserId = userId;
+            Joke.UserName = userName; 
 
             _context.Joke.Add(Joke);
             await _context.SaveChangesAsync();

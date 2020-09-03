@@ -45,10 +45,11 @@ namespace writeAJoke.Pages.Account
 
             var userName = await _userManager.GetUserNameAsync(user);
             var userEmail = await _userManager.GetEmailAsync(user);
+            var userId = await _userManager.GetUserIdAsync(user);
 
             UserName = userName;
 
-            JokeList = getJokesFromDB(userName);
+            JokeList = getJokesFromDB(userId);
 
             Input = new InputModel
             {
@@ -97,12 +98,12 @@ namespace writeAJoke.Pages.Account
             return RedirectToPage();
         }
 
-        private List<Joke> getJokesFromDB(string userName)
+        private List<Joke> getJokesFromDB(string userId)
         {
             var Jokes = from j in _context.Joke
                         select j;
 
-            Jokes = Jokes.Where(g => g.UserId == userName);
+            Jokes = Jokes.Where(g => g.UserId == userId);
             
             var JokesList = Jokes.ToList();
             return JokesList;
