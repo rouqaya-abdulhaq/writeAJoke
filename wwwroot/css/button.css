@@ -1,0 +1,25 @@
+.nav-button {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f3c623;
+    border-radius: 50px;
+    display: inline-block;
+    width: fit-content;
+    height: 8vh;
+    border: none;
+    padding: 20px;
+    font-size: small;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+}
+
+.nav-button:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    text-decoration: none;
+    box-shadow: 0px 5px 40px -10px rgba(255,255,255,0.57);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(255,255,255,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(255,255,255,0.57);
+    transition: all 0.4s ease 0s;
+}

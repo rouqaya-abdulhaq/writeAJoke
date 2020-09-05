@@ -1,13 +1,17 @@
 @page
 @model writeAJoke.Pages.Account.IndexModel
 
+@section Styles{
+    <link rel="stylesheet" href="@Href("~/css/button.css")"/>
+}
+
 @{
     ViewData["Title"] = "Account";
 }
 
 <div class="d-flex flex-column align-items-center">
     <form asp-page="../User/Logout" method="POST">
-        <button type="submit" class="btn btn-primary mt-2">Log out</button>
+        <button type="submit" class="nav-button">Log out</button>
     </form>
     <hr style="background-color: #f3c623;" />
     <div>@Model.StatusMessage</div>

@@ -1,13 +1,16 @@
 @page "{SearchString?}"
 @model writeAJoke.Pages.Jokes.IndexModel
 
+@section Styles{
+    <link rel="stylesheet" href="@Href("~/css/button.css")"/>
+}
+
 @{
     ViewData["Title"] = "Home";
 }
 
 <p>
-    <a asp-page="Create" class="badge badge-pill text-dark" 
-    style="background-color: #f3c623; height: 3vh; width : fit-content;">
+    <a asp-page="Create" class="nav-button" >
         Create New Joke
     </a>
 </p>

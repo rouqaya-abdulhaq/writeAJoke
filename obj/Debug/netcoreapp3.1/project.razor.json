@@ -14422,6 +14422,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\Account\\Index.cshtml",
+      "TargetPath": "Pages\\Account\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\acer\\Desktop\\c#Projects\\writeAJoke\\Pages\\User\\Login.cshtml",
       "TargetPath": "Pages\\User\\Login.cshtml",
       "FileKind": "mvc"
