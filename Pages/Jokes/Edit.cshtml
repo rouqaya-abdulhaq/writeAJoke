@@ -1,6 +1,10 @@
 @page  "{id:int?}"
 @model writeAJoke.Pages.Jokes.EditModel
 
+@section Styles{
+    <link rel="stylesheet" href="@Href("~/css/button.css")"/>
+}
+
 @{
     ViewData["Title"] = "Edit";
 }
@@ -30,7 +34,7 @@
                     <span asp-validation-for="Joke.Genre" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Save" class="btn btn-primary" />
+                    <input type="submit" value="Save" class="submit-button" />
                 </div>
             </form>
         </div>
