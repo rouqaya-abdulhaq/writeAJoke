@@ -3,6 +3,8 @@
 
 @section Styles{
     <link rel="stylesheet" href="@Href("~/css/button.css")"/>
+    <link rel="stylesheet" href="@Href("~/css/border.css")"/>
+    <link rel="stylesheet" href="@Href("~/css/dimentions.css")"/>
 }
 
 @{
@@ -20,12 +22,12 @@
             <div asp-validation-summary="All" class="text-danger"></div>
             <div>
                 <label asp-for="Input.Name" class="control-label"></label>
-                <input asp-for="Input.Name" class="form-control" style="border: 2px solid #f3c623"/>
+                <input asp-for="Input.Name" class="form-control joke-border"/>
                 <span asp-validation-for="Input.Name" class="text-danger"></span>
             </div>
             <div>
                 <label asp-for="Input.Email" class="control-label"></label>
-                <input asp-for="Input.Email" class="form-control" style="border: 2px solid #f3c623"/>
+                <input asp-for="Input.Email" class="form-control joke-border"/>
                 <span asp-validation-for="Input.Email" class="text-danger"></span>
             </div>
             <button id="update-profile-button" type="submit" class="submit-button mt-3">Save</button>
@@ -33,8 +35,8 @@
         <hr/>
         <h4>Your Jokes :</h4>
         @foreach (var item in Model.JokeList) {
-        <div class="card mt-2 p-3 d-flex flex-column align-items-center rounded-pill text-dark" 
-        style="width: fit-content; border: 3px solid #f3c623">
+        <div class="card mt-2 p-3 d-flex flex-column align-items-center 
+                    rounded-pill text-dark fit-content joke-border" >
             <h5 class="card-title">
                 @Html.DisplayFor(modelItem => item.Title)
             </h5>
