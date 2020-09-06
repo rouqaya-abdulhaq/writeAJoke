@@ -42,3 +42,12 @@
     border-color: #20bf6b;
     transition: all 0.3s ease 0s;
 }
+
+.filter-button{
+    color: #f3c623;
+    background: #ffffff;
+    padding: 5px;
+    border: 2px solid #f3c623;
+    border-radius: 6px;
+    display: inline-block;
+}

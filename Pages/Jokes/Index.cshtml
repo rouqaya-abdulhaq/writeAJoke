@@ -15,12 +15,12 @@
     </a>
 </p>
 <form class="d-flex mt-4">
-    <select asp-for="JokeGenre" asp-items="Model.Genres" class="mb-1 rounded" style="background-color: #f4f6ff; height : fit-content">
+    <select asp-for="JokeGenre" asp-items="Model.Genres"  class="mb-1 rounded" style="background-color: #f4f6ff; height : fit-content">
         <option value="">All</option>
     </select>
     <p class="ml-4">
         Title : <input type="text" asp-for="SearchString" class="rounded" />
-        <input type="submit" value="Filter" style="background-color: #f4f6ff;"/>
+        <input type="submit" class="filter-button" value="Filter" />
     </p>
 </form>
 <div class="d-flex flex-column align-items-center">
