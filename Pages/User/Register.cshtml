@@ -1,30 +1,35 @@
 @page
 @model writeAJoke.Pages.User.RegisterModel
 
+@section Styles{
+    <link rel="stylesheet" href="@Href("~/css/button.css")"/>
+    <link rel="stylesheet" href="@Href("~/css/border.css")"/>
+}
+
 @{
     ViewData["Title"] = "Register";
 }
 
 <div class="d-flex flex-column align-items-center">
     <h1>Register</h1>
-    <hr style="background-color: #f3c623;" />
+    <hr/>
     <form asp-rote-returnUrl="@Model.ReturnUrl" method="POST">
         <div asp-validation-summary="All" class="text-danger"></div>
         <div>
             <label asp-for="Input.Name" class="control-label"></label>
-            <input asp-for="Input.Name" class="form-control" style="border: 2px solid #f3c623"/>
+            <input asp-for="Input.Name" class="form-control joke-border" />
             <span asp-validation-for="Input.Name" class="text-danger"></span>
         </div>
         <div>
             <label asp-for="Input.Email" class="control-label"></label>
-            <input asp-for="Input.Email" class="form-control" style="border: 2px solid #f3c623"/>
+            <input asp-for="Input.Email" class="form-control joke-border"/>
             <span asp-validation-for="Input.Email" class="text-danger"></span>
         </div>
         <div>
             <label asp-for="Input.Password" class="control-label"></label>
-            <input asp-for="Input.Password" class="form-control" style="border: 2px solid #f3c623"/>
+            <input asp-for="Input.Password" class="form-control joke-border"/>
             <span asp-validation-for="Input.Password" class="text-danger"></span>
         </div>
-        <button type="submit" class="btn btn-primary mt-2">Register New User</button>
+        <button type="submit" class="submit-button mt-3">Register New User</button>
     </form>
 </div>

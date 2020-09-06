@@ -1,13 +1,18 @@
 @page
 @model writeAJoke.Pages.Jokes.CreateModel
 
+@section Styles{
+    <link rel="stylesheet" href="@Href("~/css/button.css")"/>
+    <link rel="stylesheet" href="@Href("~/css/border.css")"/>
+}
+
 @{
     ViewData["Title"] = "Create";
 }
 
 <div class="d-flex flex-column align-items-center">
     <h4>Make Me Laugh</h4>
-    <hr style="background-color: #f3c623;" />
+    <hr />
     <div class="row">
         <div class="col-md-4">
             <form method="post">
@@ -16,21 +21,21 @@
                 <input type="hidden" asp-for="Joke.UserId"/>
                 <div class="form-group" style="width: 25vw;">
                     <label asp-for="Joke.Title" class="control-label"></label>
-                    <input asp-for="Joke.Title" class="form-control" style="border: 2px solid #f3c623"/>
+                    <input asp-for="Joke.Title" class="form-control joke-border" />
                     <span asp-validation-for="Joke.Title" class="text-danger"></span>
                 </div>
                 <div class="form-group" style="width: 75vw;"> 
                     <label asp-for="Joke.Body" class="control-label"></label>
-                    <input asp-for="Joke.Body" class="form-control" style="border: 2px solid #f3c623"/>
+                    <input asp-for="Joke.Body" class="form-control joke-border" />
                     <span asp-validation-for="Joke.Body" class="text-danger"></span>
                 </div>
                 <div class="form-group" style="width : 20vw;">
                     <label asp-for="Joke.Genre" class="control-label"></label>
-                    <input asp-for="Joke.Genre" class="form-control" style="border: 2px solid #f3c623"/>
+                    <input asp-for="Joke.Genre" class="form-control joke-border" />
                     <span asp-validation-for="Joke.Genre" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />
+                    <input type="submit" value="Create" class="submit-button" />
                 </div>
             </form>
         </div>

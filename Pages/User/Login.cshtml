@@ -1,44 +1,50 @@
 @page
 @model writeAJoke.Pages.User.LoginModel
 
+@section Styles{
+    <link rel="stylesheet" href="@Href("~/css/button.css")"/>
+    <link rel="stylesheet" href="@Href("~/css/border.css")"/>
+    <link rel="stylesheet" href="@Href("~/css/color.css")"/>
+}
+
 @{
     ViewData["Title"] = "Log In";
 }
 
 <div class="d-flex flex-column align-items-center">
     <h1>Log In</h1>
-    <hr style="background-color: #f3c623;" />
+    <hr />
     <form method="POST">
         <div asp-validation-summary="All" class="text-danger"></div>
         <div>
             <label asp-for="Input.Name" class="control-label"></label>
-            <input asp-for="Input.Name" class="form-control" style="border: 2px solid #f3c623"/>
+            <input asp-for="Input.Name" class="form-control joke-border" />
             <span asp-validation-for="Input.Name" class="text-danger"></span>
         </div>
         <div>
             <label asp-for="Input.Email" class="control-label"></label>
-            <input asp-for="Input.Email" class="form-control" style="border: 2px solid #f3c623"/>
+            <input asp-for="Input.Email" class="form-control joke-border" />
             <span asp-validation-for="Input.Email" class="text-danger"></span>
         </div>
         <div>
             <label asp-for="Input.Password" class="control-label"></label>
-            <input asp-for="Input.Password" class="form-control" style="border: 2px solid #f3c623"/>
+            <input asp-for="Input.Password" class="form-control joke-border"/>
             <span asp-validation-for="Input.Password" class="text-danger"></span>
         </div>
         <div>
             <div>
                 <label asp-for="Input.RememberMe" >
-                    <input asp-for="Input.RememberMe" style="border: 2px solid #f3c623"/>
+                    <input asp-for="Input.RememberMe" class="joke-border"/>
                     @Html.DisplayNameFor(m => m.Input.RememberMe)
                 </label>
             </div>
         </div>
         <div>
-            <button type="submit" class="btn btn-primary mt-2">Log In</button>
+            <button type="submit" class="submit-button mt-3">Log In</button>
         </div>
         <div>
             <p class="nav-item">
-                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="nav-link" style="color: gray;">New User?</a>
+                <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl" class="nav-link joke-color" >New User?</a>
             </p>
         </div>
     </form>
