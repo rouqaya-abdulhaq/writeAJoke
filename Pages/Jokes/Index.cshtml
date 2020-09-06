@@ -3,6 +3,8 @@
 
 @section Styles{
     <link rel="stylesheet" href="@Href("~/css/button.css")"/>
+    <link rel="stylesheet" href="@Href("~/css/border.css")"/>
+    <link rel="stylesheet" href="@Href("~/css/dimentions.css")"/>
 }
 
 @{
@@ -19,14 +21,14 @@
         <option value="">All</option>
     </select>
     <p class="ml-4">
-        Title : <input type="text" asp-for="SearchString" class="rounded" />
+        Title : <input type="text" asp-for="SearchString" class="rounded joke-border" />
         <input type="submit" class="filter-button" value="Filter" />
     </p>
 </form>
 <div class="d-flex flex-column align-items-center">
 @foreach (var item in Model.Joke) {
-        <div class="card mt-2 p-4 d-flex flex-column align-items-center rounded-pill text-dark" 
-        style="width: fit-content; border: 3px solid #f3c623">
+        <div class="card mt-2 p-4 d-flex flex-column align-items-center 
+                    rounded-pill text-dark joke-border fit-content" >
             <h5 class="card-title">
                 @Html.DisplayFor(modelItem => item.Title)
             </h5>
