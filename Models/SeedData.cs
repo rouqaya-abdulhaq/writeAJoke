@@ -26,7 +26,10 @@ namespace writeAJoke.Models
                         Body = "can i tell you a vegan joke? i promise it won't be cheesy",
                         Genre = "dad jokes",
                         UserId = "",
-                        UserName = "Write A Joke"
+                        UserName = "Write A Joke",
+                        laughs = 0,
+                        smiles = 0,
+                        eyeRolls = 0
                     }
                 );
 

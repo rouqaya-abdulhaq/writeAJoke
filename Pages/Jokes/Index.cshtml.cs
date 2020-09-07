@@ -48,5 +48,23 @@ namespace writeAJoke.Pages.Jokes
             Joke = await Jokes.ToListAsync();
         }
 
+        public async Task<IActionResult> OnPostLaughAsync()
+        {
+            Console.WriteLine("laugh");
+            return RedirectToPage();
+        }
+
+        public async Task<IActionResult> OnPostSmileAsync()
+        {
+            Console.WriteLine("smile");
+            return RedirectToPage();
+        }
+
+        public async Task<IActionResult> OnPostEyeRollAsync()
+        {
+            Console.WriteLine("eye roll");
+            return RedirectToPage();
+        }
+
     }
 }

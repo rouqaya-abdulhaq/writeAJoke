@@ -38,7 +38,24 @@
                 @Html.DisplayFor(modelItem => item.Body)
             </div>
             <p class="grey-color"><i>by : @Html.DisplayFor(modelItem => item.UserName)</i></p>
-    </div>
+            <div class="d-flex">
+                <form method="POST" asp-page-handler="laugh">
+                    <div type="submit" class="emptyButton ml-1">
+                        <img src="~/images/laugh.png" alt="laugh"/>
+                    </div>
+                </form>
+                <form method="POST" asp-page-handler="smile">
+                    <div type="submit" class="emptyButton ml-1">
+                        <img src="~/images/smile.png" alt="smile"/>
+                    </div>
+                </form>
+                <form method="POST" asp-page-handler="eyeRoll">
+                    <div type="submit" class="emptyButton ml-1">
+                        <img src="~/images/eyeRoll.png" alt="eye roll"/>
+                    </div>
+                </form>
+            </div>
+        </div>
 }
 </div>
 
