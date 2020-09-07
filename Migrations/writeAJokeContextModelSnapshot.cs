@@ -232,6 +232,15 @@ namespace writeAJoke.Migrations
                     b.Property<string>("UserName")
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("eyeRolls")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("laughs")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("smiles")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("ID");
 
                     b.ToTable("Joke");

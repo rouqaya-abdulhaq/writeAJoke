@@ -9,7 +9,7 @@ using writeAJoke.Data;
 namespace writeAJoke.Migrations
 {
     [DbContext(typeof(writeAJokeContext))]
-    [Migration("20200903174516_InitialCreate")]
+    [Migration("20200907151327_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -233,6 +233,15 @@ namespace writeAJoke.Migrations
 
                     b.Property<string>("UserName")
                         .HasColumnType("TEXT");
+
+                    b.Property<int>("eyeRolls")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("laughs")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("smiles")
+                        .HasColumnType("INTEGER");
 
                     b.HasKey("ID");
 

@@ -17,5 +17,11 @@ namespace writeAJoke.Models
         public string UserId {get; set;}
 
         public string UserName {get; set;}
+
+        public int  laughs {get; set;}
+
+        public int smiles {get; set;}
+
+        public int eyeRolls {get; set;}
     }
 }
