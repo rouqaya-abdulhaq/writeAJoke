@@ -39,19 +39,22 @@
             </div>
             <p class="grey-color"><i>by : @Html.DisplayFor(modelItem => item.UserName)</i></p>
             <div class="d-flex">
-                <form method="POST" asp-page-handler="laugh">
+                <form method="POST" asp-page-handler="Laugh" asp-route-id="@item.ID">
                     <div type="submit" class="emptyButton ml-1">
                         <img src="~/images/laugh.png" alt="laugh"/>
+                        <p>@Html.DisplayFor(modelItem => item.laughs)</p>
                     </div>
                 </form>
-                <form method="POST" asp-page-handler="smile">
+                <form method="POST" asp-page-handler="Smile" asp-route-id="@item.ID">
                     <div type="submit" class="emptyButton ml-1">
                         <img src="~/images/smile.png" alt="smile"/>
+                        <p>@Html.DisplayFor(modelItem => item.smiles)</p>
                     </div>
                 </form>
-                <form method="POST" asp-page-handler="eyeRoll">
+                <form method="POST" asp-page-handler="EyeRoll" asp-route-id="@item.ID">
                     <div type="submit" class="emptyButton ml-1">
                         <img src="~/images/eyeRoll.png" alt="eye roll"/>
+                        <p>@Html.DisplayFor(modelItem => item.eyeRolls)</p>
                     </div>
                 </form>
             </div>

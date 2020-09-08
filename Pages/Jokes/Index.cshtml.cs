@@ -48,21 +48,40 @@ namespace writeAJoke.Pages.Jokes
             Joke = await Jokes.ToListAsync();
         }
 
-        public async Task<IActionResult> OnPostLaughAsync()
+        public async Task<IActionResult> OnPostLaughAsync(int? id)
         {
-            Console.WriteLine("laugh");
+            var JokeToLaugh = await _context.Joke.FindAsync(id);
+
+            if(JokeToLaugh != null)
+            {
+                JokeToLaugh.laughs += 1;
+                await _context.SaveChangesAsync();
+            }
             return RedirectToPage();
         }
 
-        public async Task<IActionResult> OnPostSmileAsync()
+        public async Task<IActionResult> OnPostSmileAsync(int? id)
         {
-            Console.WriteLine("smile");
+            var JokeToLaugh = await _context.Joke.FindAsync(id);
+
+            if(JokeToLaugh != null)
+            {
+                JokeToLaugh.smiles += 1;
+                await _context.SaveChangesAsync();
+            }
             return RedirectToPage();
         }
 
-        public async Task<IActionResult> OnPostEyeRollAsync()
+        public async Task<IActionResult> OnPostEyeRollAsync(int? id)
         {
-            Console.WriteLine("eye roll");
+            var JokeToLaugh = await _context.Joke.FindAsync(id);
+
+            if(JokeToLaugh != null)
+            {
+                JokeToLaugh.eyeRolls += 1;
+                await _context.SaveChangesAsync();
+            }
+            Console.WriteLine(JokeToLaugh.eyeRolls);
             return RedirectToPage();
         }
 
