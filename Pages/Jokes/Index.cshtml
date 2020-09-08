@@ -39,21 +39,27 @@
             </div>
             <p class="grey-color"><i>by : @Html.DisplayFor(modelItem => item.UserName)</i></p>
             <div class="d-flex">
-                <form method="POST" asp-page-handler="Laugh" asp-route-id="@item.ID">
-                    <div type="submit" class="emptyButton ml-1">
-                        <img src="~/images/laugh.png" alt="laugh"/>
+                <form method="POST" asp-page-handler="Laugh" class="ml-1" asp-route-id="@item.ID">
+                    <div>
+                        <button type="submit" class="emptyButton">
+                            <img src="~/images/laugh.png" alt="laugh"/>
+                        </button>
                         <p>@Html.DisplayFor(modelItem => item.laughs)</p>
                     </div>
                 </form>
-                <form method="POST" asp-page-handler="Smile" asp-route-id="@item.ID">
-                    <div type="submit" class="emptyButton ml-1">
-                        <img src="~/images/smile.png" alt="smile"/>
+                <form method="POST" asp-page-handler="Smile" class="ml-4" asp-route-id="@item.ID">
+                    <div>
+                        <button type="submit" class="emptyButton">
+                            <img src="~/images/smile.png" alt="smile"/>
+                        </button>
                         <p>@Html.DisplayFor(modelItem => item.smiles)</p>
                     </div>
                 </form>
-                <form method="POST" asp-page-handler="EyeRoll" asp-route-id="@item.ID">
-                    <div type="submit" class="emptyButton ml-1">
-                        <img src="~/images/eyeRoll.png" alt="eye roll"/>
+                <form method="POST" asp-page-handler="EyeRoll" class="ml-4" asp-route-id="@item.ID">
+                    <div>
+                        <button type="submit" class="emptyButton">
+                            <img src="~/images/eyeRoll.png" alt="eye roll"/>
+                        </button>
                         <p>@Html.DisplayFor(modelItem => item.eyeRolls)</p>
                     </div>
                 </form>

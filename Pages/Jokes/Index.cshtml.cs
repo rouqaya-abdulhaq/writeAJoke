@@ -81,7 +81,6 @@ namespace writeAJoke.Pages.Jokes
                 JokeToLaugh.eyeRolls += 1;
                 await _context.SaveChangesAsync();
             }
-            Console.WriteLine(JokeToLaugh.eyeRolls);
             return RedirectToPage();
         }
 
