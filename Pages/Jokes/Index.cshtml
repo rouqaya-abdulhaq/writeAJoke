@@ -19,7 +19,7 @@
     </a>
 </p>
 <form class="d-flex mt-4">
-    <select asp-for="JokeGenre" asp-items="Model.Genres"  class="mb-1 rounded">
+    <select asp-for="JokeGenre" asp-items="Model.Genres"  class="mb-1 rounded select">
         <option value="">All</option>
     </select>
     <p class="ml-4">
@@ -40,27 +40,30 @@
             <p class="grey-color"><i>by : @Html.DisplayFor(modelItem => item.UserName)</i></p>
             <div class="d-flex">
                 <form method="POST" asp-page-handler="Laugh" class="ml-1" asp-route-id="@item.ID">
-                    <div>
+                    <div class="border pl-1 pr-1">
                         <button type="submit" class="emptyButton">
                             <img src="~/images/laugh.png" alt="laugh"/>
+                            <hr/>
                         </button>
-                        <p>@Html.DisplayFor(modelItem => item.laughs)</p>
+                        <p class="font-weight-bold">@Html.DisplayFor(modelItem => item.laughs)</p>
                     </div>
                 </form>
                 <form method="POST" asp-page-handler="Smile" class="ml-4" asp-route-id="@item.ID">
-                    <div>
+                    <div class="border pl-1 pr-1">
                         <button type="submit" class="emptyButton">
                             <img src="~/images/smile.png" alt="smile"/>
+                            <hr/>
                         </button>
-                        <p>@Html.DisplayFor(modelItem => item.smiles)</p>
+                        <p class="font-weight-bold">@Html.DisplayFor(modelItem => item.smiles)</p>
                     </div>
                 </form>
                 <form method="POST" asp-page-handler="EyeRoll" class="ml-4" asp-route-id="@item.ID">
-                    <div>
+                    <div class="border pl-1 pr-1">
                         <button type="submit" class="emptyButton">
                             <img src="~/images/eyeRoll.png" alt="eye roll"/>
+                            <hr/>
                         </button>
-                        <p>@Html.DisplayFor(modelItem => item.eyeRolls)</p>
+                        <p class="font-weight-bold">@Html.DisplayFor(modelItem => item.eyeRolls)</p>
                     </div>
                 </form>
             </div>
